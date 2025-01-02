@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build",
+        "type": "shell",
+        "command": "g++",
+        "args": [
+          "-g",
+          "proxy_server_with_cache.cpp",
+          "proxy_parsing/proxy_parse.cpp",
+          "-o",
+          "proxy_server_with_cache",
+          "-lws2_32",
+          "-lpthread"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": ["$gcc"],
+        "detail": "Generated task by debugging setup."
+      }
+    ]
+  }
